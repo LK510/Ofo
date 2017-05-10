@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入车牌号。。。" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8U6-3c-wfQ">
+                                <rect key="frame" x="50" y="130" width="275" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FYJ-SD-P8V"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入对应的密码，，，" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="asR-dn-Pr1">
+                                <rect key="frame" x="50" y="210" width="275" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ar-Tb-G0M">
+                                <rect key="frame" x="50" y="320" width="275" height="40"/>
+                                <color key="backgroundColor" red="0.50196078430000002" green="0.74901960779999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="set">
+                                    <color key="titleColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EcF-Zq-ZUs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBf-Ji-UgX">
+                                <rect key="frame" x="50" y="400" width="275" height="40"/>
+                                <color key="backgroundColor" red="0.50196078430000002" green="0.74901960779999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="get">
+                                    <color key="titleColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2v-NC-3po"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71026443597985933" green="0.84705882349999995" blue="0.82884713493352657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8U6-3c-wfQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="AWX-kH-X3j"/>
+                            <constraint firstAttribute="trailing" secondItem="8U6-3c-wfQ" secondAttribute="trailing" constant="50" id="AYA-rB-9sw"/>
+                            <constraint firstItem="6ar-Tb-G0M" firstAttribute="top" secondItem="asR-dn-Pr1" secondAttribute="bottom" constant="70" id="Dip-UB-dcG"/>
+                            <constraint firstItem="jBf-Ji-UgX" firstAttribute="trailing" secondItem="6ar-Tb-G0M" secondAttribute="trailing" id="G1A-GM-4D9"/>
+                            <constraint firstItem="asR-dn-Pr1" firstAttribute="trailing" secondItem="8U6-3c-wfQ" secondAttribute="trailing" id="HYc-xU-TpT"/>
+                            <constraint firstItem="6ar-Tb-G0M" firstAttribute="trailing" secondItem="asR-dn-Pr1" secondAttribute="trailing" id="QQS-C7-Mvp"/>
+                            <constraint firstItem="asR-dn-Pr1" firstAttribute="top" secondItem="8U6-3c-wfQ" secondAttribute="bottom" constant="40" id="Rld-nJ-xeA"/>
+                            <constraint firstItem="jBf-Ji-UgX" firstAttribute="height" secondItem="6ar-Tb-G0M" secondAttribute="height" id="XTz-3a-2Mj"/>
+                            <constraint firstItem="asR-dn-Pr1" firstAttribute="height" secondItem="8U6-3c-wfQ" secondAttribute="height" id="auh-Vb-QpC"/>
+                            <constraint firstItem="asR-dn-Pr1" firstAttribute="leading" secondItem="8U6-3c-wfQ" secondAttribute="leading" id="b5s-iy-lir"/>
+                            <constraint firstItem="jBf-Ji-UgX" firstAttribute="top" secondItem="6ar-Tb-G0M" secondAttribute="bottom" constant="40" id="eeF-9I-Q5i"/>
+                            <constraint firstItem="8U6-3c-wfQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="j4N-HA-9cE"/>
+                            <constraint firstItem="jBf-Ji-UgX" firstAttribute="leading" secondItem="6ar-Tb-G0M" secondAttribute="leading" id="kbX-zS-UEf"/>
+                            <constraint firstItem="6ar-Tb-G0M" firstAttribute="height" secondItem="asR-dn-Pr1" secondAttribute="height" id="pap-AC-52u"/>
+                            <constraint firstItem="6ar-Tb-G0M" firstAttribute="leading" secondItem="asR-dn-Pr1" secondAttribute="leading" id="sHQ-ur-NlX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bikeNum" destination="8U6-3c-wfQ" id="swA-Ba-IP1"/>
+                        <outlet property="bikePwd" destination="asR-dn-Pr1" id="MZz-JP-VOM"/>
+                        <outlet property="getBtn" destination="jBf-Ji-UgX" id="rCs-KM-N9W"/>
+                        <outlet property="setBtn" destination="6ar-Tb-G0M" id="wYm-Dz-4jP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
